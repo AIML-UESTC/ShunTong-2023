@@ -5,6 +5,6 @@ st.sidebar.markdown("# ViT demo ❄️")
 
 
 st.title('点击链接跳转至ViT demo')
-link = '(https://tong-cao-visontransformer-streamlit-show-2wq9qt.streamlit.app/)'
-if st.button(link):
-    webbrowser.open_new_tab('https://tong-cao-visontransformer-streamlit-show-2wq9qt.streamlit.app/')
+
+link = '[Visit ViT demo](https://tong-cao-visontransformer-streamlit-show-2wq9qt.streamlit.app/)'
+st.markdown(link, unsafe_allow_html=True)
