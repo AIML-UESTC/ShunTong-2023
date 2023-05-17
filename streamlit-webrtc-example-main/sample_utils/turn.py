@@ -1,3 +1,4 @@
+# https://blog.csdn.net/weixin_39510813/article/details/125886341
 import logging
 import os
 
@@ -24,7 +25,11 @@ def get_ice_servers():
         logger.warning(
             "Twilio credentials are not set. Fallback to a free STUN server from Google."  # noqa: E501
         )
-        return [{"urls": ["stun:stun.l.google.com:19302"]}]
+        # return [{"urls": ["stun:stun.l.google.com:19302"]}]
+        #return [{"urls": ["turn:47.120.40.60:3478"]}]
+        return [{"urls": ["turn:47.120.40.60:3478"],
+                 "username": ["qiteam"],
+                 "credential": ["qiteamuestc"]}]
 
     client = Client(account_sid, auth_token)
 
