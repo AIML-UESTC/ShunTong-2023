@@ -7,7 +7,7 @@ st.title('项目名称 xxx项目')
 st.title('项目描述')
 st.text('该项目是xxxxx')
 st.title('项目展示')
-st.subheader('点击链接跳转至yolov3预测结果展示')
+st.subheader('点击链接跳转至xxx结果展示')
 
 link = '[Visit Streamlit](https://streamlit.io/)'
 st.markdown(link, unsafe_allow_html=True)
