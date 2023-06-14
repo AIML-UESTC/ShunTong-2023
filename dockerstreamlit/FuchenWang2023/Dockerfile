@@ -10,8 +10,8 @@ COPY . .
 
 RUN pip3 install -r requirements.txt
 
-#EXPOSE 11000
+EXPOSE 8505
 
 HEALTHCHECK CMD curl --fail http://localhost:11000/_stcore/health
 
-#ENTRYPOINT ["streamlit", "run", "src/Display.py", "--server.port=11000", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "src/Display.py", "--server.port=8505", "--server.address=0.0.0.0"]
