@@ -1,5 +1,6 @@
 #!/bin/bash
 cp dockerimage/Dockerfile .
-docker rmi -f docker rmi -f standarddemo
-docker build -t standarddemo .
+docker rmi -f docker rmi -f standarddemo8507
+docker build -t standarddemo8507 .
+rm Dockerfile
 

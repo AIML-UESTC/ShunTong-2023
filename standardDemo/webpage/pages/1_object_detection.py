@@ -22,18 +22,12 @@ ROOT = HERE.parent
 
 logger = logging.getLogger(__name__)
 
-'''
-MODEL_URL = "https://github.com/robmarkcole/object-detection-app/raw/master/model/MobileNetSSD_deploy.caffemodel"  # noqa: E501
-MODEL_LOCAL_PATH = ROOT / "./models/MobileNetSSD_deploy.caffemodel"
-PROTOTXT_URL = "https://github.com/robmarkcole/object-detection-app/raw/master/model/MobileNetSSD_deploy.prototxt.txt"  # noqa: E501
-PROTOTXT_LOCAL_PATH = ROOT / "./models/MobileNetSSD_deploy.prototxt.txt"
-'''
-
 MODEL_URL = "https://github.com/robmarkcole/object-detection-app/raw/master/model/MobileNetSSD_deploy.caffemodel"  # noqa: E501
 MODEL_LOCAL_PATH = ROOT / "../models/MobileNetSSD_deploy.caffemodel"
 PROTOTXT_URL = "https://github.com/robmarkcole/object-detection-app/raw/master/model/MobileNetSSD_deploy.prototxt.txt"  # noqa: E501
 PROTOTXT_LOCAL_PATH = ROOT / "../models/MobileNetSSD_deploy.prototxt.txt"
-
+#print("MODEL_LOCAL_PATH", MODEL_LOCAL_PATH)
+#print("PROTOTXT_LOCAL_PATH", PROTOTXT_LOCAL_PATH)
 CLASSES = [
     "background",
     "aeroplane",
