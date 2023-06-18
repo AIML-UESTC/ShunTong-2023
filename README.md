@@ -42,3 +42,17 @@ https://www.bilibili.com/read/cv22820592?spm_id_from=333.999.0.0
 修正requirements.txt里面不正确的依赖  
 安装requirements.txt时，注意使用conda 新创建一个 虚拟环境 env，并切换到env环境下进行操作，尤其是同一服务器想部署多个项目一定要这样做，否则依赖冲突。    
 安装依赖时，可以直接将报错google，依赖版本替换完成后，注意最新问题是验证当前这个库的依赖还是解决下一个依赖，不要反复去修改同一个依赖。  
+
+#
+
+# docker端口部署使用
+|姓名|docker内容|docker镜像名|端口|
+|----|----|----|----|
+|董哲明|yolo5|dzmyolov5-ascend8501|8501|
+|童顺|webrtc|webrtc8502|8502|
+|童顺|实验室主页|streamlitmainpage8503|8503|
+|黄沿鑫|病灶|hyx8504|8504|
+|王富臣|细胞核分割|wfccellseg8505| 8505|
+|王晶|kmeans聚类|wj8506 |8506|
+|童顺|标准项目架构|standarddemo8507|8507|
+|马博俊|雷达识别|  mbj8508|8508|
